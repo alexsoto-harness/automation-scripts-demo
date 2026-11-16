@@ -20,3 +20,7 @@ SOURCE_DB=prod-replica TARGET_DB=test-db ./scripts/data/migrate.sh
 ## Rollback
 
 Re-run with a fresh snapshot; the target is overwritten each run.
+
+## Row count validation
+
+After loading, the script compares source and target row counts and fails the run if they differ. Use `SAMPLE_PERCENT` (default `100`) to migrate only a subset of rows.
