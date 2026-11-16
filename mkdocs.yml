@@ -1,0 +1,6 @@
+site_name: Automation Scripts
+nav:
+  - Home: index.md
+  - Migrate Sanitized Data: migrate-sanitized-data.md
+plugins:
+  - techdocs-core
