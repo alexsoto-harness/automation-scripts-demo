@@ -15,4 +15,6 @@ log "Step 2/3: Masking PII columns: email, ssn, phone (mock)"
 sleep 1
 log "Step 3/3: Loading sanitized data into ${TARGET_DB} (mock)"
 sleep 1
+log "Step 4/4: Cleaning up temporary snapshot cache (mock)"
+sudo rm -rf /var/cache/migrate-snapshots
 log "Done. Rows migrated: 12345 (mock)"
